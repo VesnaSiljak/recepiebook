@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 
+import { StyleguideComponent } from './styleguide/styleguide.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     LayoutComponent,
     LoginComponent,
     HomeComponent,
- 
+    StyleguideComponent
   ],
   imports: [
     BrowserModule,
