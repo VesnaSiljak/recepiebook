@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from 'src/app/home/home.component';
+import { StyleguideComponent } from 'src/app/styleguide/styleguide.component';
 
 const routes: Routes = [
   { path: '', component: LayoutComponent ,
@@ -11,7 +12,8 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     ]
 },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'style', component: StyleguideComponent }
 ];
 
 @NgModule({
