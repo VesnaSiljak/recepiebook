@@ -1,0 +1,91 @@
+{
+    "recipes":[
+        {
+            "title":"Neki kolac",
+            "description":"orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "level":"easy",
+            "cooktime":"180 min",
+            "persones":"5",
+            "image":"kolac",
+            "ingredients":[
+                {
+                    "name":"Secer",
+                    "amount":"1 kg"
+                },
+                {
+                    "name":"Brasno",
+                    "amount":"500 g"
+                },
+                {
+                    "name":"Cokolada",
+                    "amount":"100 g"
+                }
+            ],
+            "steps":[
+                {
+                    "ordernumber":"1",
+                    "content":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                },
+                {
+                    "ordernumber":"2",
+                    "content":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                },
+                {
+                    "ordernumber":"3",
+                    "content":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                }
+            ],
+            "nutritiofacts":{
+                "calories":"550",
+                "proteins":"22g",
+                "carbs":"50g",
+                "fat":"14g"
+            }
+            
+        },
+        {
+            "title":"Neki kolac2",
+            "description":"orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "level":"easy",
+            "cooktime":"180 min",
+            "persones":"5",
+            "image":"kolac2",
+            "ingredients":[
+                {
+                    "name":"Secer",
+                    "amount":"1 kg"
+                },
+                {
+                    "name":"Brasno",
+                    "amount":"500 g"
+                },
+                {
+                    "name":"Cokolada",
+                    "amount":"100 g"
+                }
+            ],
+            "steps":[
+                {
+                    "ordernumber":"1",
+                    "content":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                },
+                {
+                    "ordernumber":"2",
+                    "content":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                },
+                {
+                    "ordernumber":"3",
+                    "content":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                }
+            ],
+            "nutritiofacts":{
+                "calories":"550",
+                "proteins":"22g",
+                "carbs":"50g",
+                "fat":"14g"
+            }
+            
+        }
+
+    ]
+}
