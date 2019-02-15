@@ -1,0 +1,51 @@
+@import '../../styles.scss';
+.start-screen{
+    height: 100vh;
+    background-image:url("../../assets/images/bg.jpg");
+    background-size: 100% auto;
+    &>div{
+        height: 90%;
+        padding-top:100px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction:column;
+        justify-content: center;
+        color: $white;
+        div{
+            h1{
+                font-size: 50px;
+                font-weight: 300;
+                text-shadow: 0px 3px 8px #000000;
+            }
+            p{
+                margin-top: 50px;
+                font-size: 20px;
+                text-shadow: 0px 3px 8px #000000;
+                max-width: 70%;
+            }
+            button{
+                margin-top: 30px;
+                width: 250px;
+                color: $light-color;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: left;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 15px;
+                @include shadow(0px, 2px, 5px, 0px); 
+                @include transition(all,0.2s); 
+                i{
+                    float:right;
+                    font-size: 25px;
+                }
+                &:hover{
+                    background: $light-color;
+                    color: white;
+                    @include transition(all,0.2s); 
+                }
+            }
+        }
+
+    }
+}

@@ -1,7 +1,9 @@
 @import '../../../styles.scss';
 header{
+    //position:absolute;
     overflow: hidden;
     background: $white;
+    width: 100%;
     display: flex;
     @include shadow(0px, 2px, 5px, 0px);
     .left-btn{
