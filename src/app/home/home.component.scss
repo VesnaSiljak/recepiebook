@@ -49,3 +49,20 @@
 
     }
 }
+.categories{
+    .categories-blocks{
+    &>div{
+        background: $white;
+        text-align: center;
+    }
+    .img-holder{
+        width: 30%;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+      }  
+    }
+
+    
+}

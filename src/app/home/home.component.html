@@ -9,3 +9,18 @@
   </div>
   </div>
 </section>
+<section class="categories">
+  <div class="container margint30">
+    <div class="row">
+    <div class="col-sm-3 categories-blocks" *ngFor="let item of categoriesObj | keyvalue">
+    <div>
+    <div class="img-holder">
+      <img [src]="'assets/images/'+item.key+'.png'" alt="">
+    </div>
+      <p>{{item.value}}</p>
+      <p>{{item.key}}</p>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
