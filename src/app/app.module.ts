@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 
 import { StyleguideComponent } from './styleguide/styleguide.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StyleguideComponent } from './styleguide/styleguide.component';
     LayoutComponent,
     LoginComponent,
     HomeComponent,
-    StyleguideComponent
+    StyleguideComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,

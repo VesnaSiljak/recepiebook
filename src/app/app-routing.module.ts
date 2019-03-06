@@ -5,11 +5,13 @@ import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from 'src/app/home/home.component';
 import { StyleguideComponent } from 'src/app/styleguide/styleguide.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 const routes: Routes = [
   { path: '', component: LayoutComponent ,
   children: [
     { path: '', component: HomeComponent },
+    {path: 'recipes', component: RecipesComponent},
     ]
 },
   { path: 'login', component: LoginComponent },

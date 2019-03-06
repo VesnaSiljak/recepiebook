@@ -1,0 +1,11 @@
+<div class="container margint30">
+  <div class="recipes" *ngFor= "let recipe of recipes">
+    <h2> {{recipe.title}} </h2>
+    <img [src]="'../../assets/images/' + recipe.image + '.jpg'">
+    <ul>
+      <li *ngFor = "let ingredient of recipe.ingredients">
+        {{ingredient.name}} - {{ingredient.amount}}
+      </li>
+    </ul>
+  </div>
+</div>
