@@ -24,3 +24,14 @@
   </div>
   </div>
 </section>
+<!-- Just for test  -->
+<div>
+  <p>test</p>
+  <button (click)="addRecipe(dumyData)">Add</button>
+  <p>{{items}}</p>
+  <ul>
+    <li class="text" *ngFor="let item of recipesList" (click)="updateRecipe(item.id,dumyData)">
+      {{item.title}}
+    </li>
+  </ul>
+</div>
