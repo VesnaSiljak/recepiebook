@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from './home.service';
 import { Recipe } from './home.model';
+import { AngularFireStorage } from 'angularfire2/storage';
 
 @Component({
   selector: 'app-home',
@@ -14,9 +15,34 @@ export class HomeComponent implements OnInit {
   categoriesObj={};
   recipesList:any[];
   dumyData=new Recipe();
+  selectedFiles:FileList;
+  file:File;
+  imagesrc;
 
-  constructor(private homeService:HomeService) {}
+  constructor(private homeService:HomeService, private storage:AngularFireStorage ) {}
 
+  chooseFiles(event){
+    this.selectedFiles=event.target.files;
+    if(this.selectedFiles.item(0))
+      this.uploadpic();
+  }
+
+  uploadpic(){
+    let file = this.selectedFiles.item(0);
+    let uniqkey= 'pic' + Math.floor(Math.random()*1000000);
+    const uploadTask= this.storage.upload('/angularfirestore/' + uniqkey,file).then(
+      ()=>{
+        const ref = this.storage.ref('/angularfirestore/' + uniqkey);
+        const downloadURL=ref.getDownloadURL().subscribe(
+          (url)=>{
+            const Url = url; // for ts
+            this.imagesrc = url;
+            console.log(Url);
+          }
+        )
+      }
+    );
+  }
   ngOnInit() {
     this.getCategories();
   }

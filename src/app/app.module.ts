@@ -16,6 +16,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 //import { AngularFireModule } from '@angular/fire';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -33,6 +34,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AngularFireStorageModule,
     AppRoutingModule,
     HttpClientModule
   ],
